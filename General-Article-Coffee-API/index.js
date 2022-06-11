@@ -18,7 +18,7 @@ app.get("/:article_coffe", async (req, res) => {
     if (!results[0]) {
       res.json({ status: "Not found!" });
     } else {
-      res.json(results[0]);
+      res.json(results);
     }
   });
 });
